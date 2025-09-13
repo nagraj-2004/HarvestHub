@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/styles/login.css">
+    <link href="https://unpkg.com/tailwindcss@%5E2.0/dist/tailwind.min.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/x-icon" href="/images/logonobg.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product</title>
+    <style>
+        /* Global styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Disable href tags highlight */
+        a {
+            text-decoration: none;
+            color: inherit;
+            outline: none;
+        }
+
+        /* Optionally, you can add a custom hover effect */
+        a:hover {
+            color: green;
+        }
+
+        /* Navbar styles */
+
+        /* Content styles */
+        h1 {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .user-list-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .search-bar {
+            width: 600px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+            margin-top:100px;
+            height: 100px;
+        }
+
+        .search-input {
+            flex: 1; /* This will make the input take up remaining space */
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 5px 0 0 5px;
+            box-sizing: border-box;
+        }
+
+        .search-button {
+            margin-top:5px;
+            display: block; /* Ensure the button occupies its own line */
+            width: 100px;
+            padding: 8px;
+            border: none;
+            background-color: #4CAF50;
+            color: white;
+            border-radius: 20px; /* Adjust border-radius to make the button curved */
+            cursor: pointer;
+            height: 38px; /* Adjust the height to match the input box */
+            margin: 0 auto; /* Align the button to the center horizontally */
+        }
+        
+        
+        
+
+        .search-button:hover {
+            background-color: #45a049;
+        }
+
+        .user-list {
+            margin-top:50px;
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .user-item {
+            background-color: #f0f0f0;
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin: 10px;
+            width: calc(25% - 20px);
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            box-sizing: border-box;
+        }
+
+        .user-item:hover {
+            background-color: #e0e0e0;
+            transform: scale(1.05);
+        }
+
+        .user-details {
+            margin-bottom: 10px;
+        }
+
+        .user-image {
+            max-width: 100px;
+            max-height: 100px;
+            margin-bottom: 10px;
+        }
+        .button-container {
+            display: flex; /* Use flexbox */
+            align-items: center; /* Align items vertically */
+            float: right;
+            margin-right:20px; /* Float the container to the right */
+        }
+        .button-containers{
+            display: flex; /* Use flexbox */
+            align-items: center; /* Align items vertically */
+            float:left;
+            margin-left:20px;
+        }
+        .Createbutton{
+            margin-top:100px;
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            
+        }
+        .heading{
+            margin-top:120px;
+            font: 1em sans-serif;
+            font-size:x-large;
+        }
+        
+       
+        .profile-image {
+            width: 50px; /* Adjust the width of the image */
+            height: 50px; /* Adjust the height of the image */
+            margin-left:20px;
+            margin-top:100px /* Add some space between the button and the image */
+        }
+        
+        .profile-image:hover {
+            cursor: pointer;
+        }
+
+        /* Media query for three items per row on smaller screens */
+        @media (max-width: 768px) {
+            .user-item {
+                width: calc(33.33% - 20px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="flex items-center justify-between py-4 px-6 bg-white shadow fixed top-0 w-full z-10">
+        <div>
+            <a href="/home"><img src="/images/logonobg.png" alt="Logo" class="h-8"></a>
+        </div>
+        <div>
+            <ul class="flex space-x-6">
+                <li><a href="/home" class="text-gray-700 hover:text-gray-700">Home</a></li>
+                <li><a href="/about" class="text-gray-700 hover:text-blue-600">About</a></li>
+                <li><a href="/product" class="text-gray-700 hover:text-blue-600">Products</a></li>
+                <li><a href="/blog" class="text-gray-700 hover:text-blue-600">Blog</a></li>
+                <li><a href="/profile" class="text-blue-600 hover:text-blue-600">Profile</a></li>
+                <li><a href="/contactus" class="text-gray-700 hover:text-blue-600">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+    <h1 class="heading"><strong>Transactions</strong></h1>
+    <ul class="user-list" style:"margin-top:100px">
+        <% users.forEach(user => { %>
+            <li class="user-item">
+                
+    
+                        <strong>BuyerEmail:</strong> <%= user.buyeremail %><br>
+                        <strong>SellerEmail:</strong> <%= user.selleremail %><br>
+                        <strong>Productid:</strong> <%= user.productid %><br>
+                        <strong>Product name:</strong> <%= user.productname %><br>
+                        <strong>Price:</strong> <%= user.price %><br>
+                        <strong>Rating:</strong> <%= user.rating %><br>
+                    
+                    
+                </a>
+            </li>
+        <% }) %>
+        <% userss.forEach(user => { %>
+            <li class="user-item">
+                <strong>BuyerEmail:</strong> <%= user.buyeremail %><br>
+                <strong>SellerEmail:</strong> <%= user.selleremail %><br>
+                <strong>Productid:</strong> <%= user.productid %><br>
+                <strong>Product name:</strong> <%= user.productname %><br>
+                <strong>Price:</strong> <%= user.price %><br>
+                <strong>Rating:</strong> <%= user.rating %><br>
+        </li>
+        <% }) %>
+    </ul>
+</body>
