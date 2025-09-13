@@ -28,7 +28,7 @@ It provides features for user authentication, product listings, buy requests, an
 ---
 
 ## 📂 Project Structure
-- HarvestHub/
+# HarvestHub/
 - │── index.js # Main server file
 - │── models.js # User schema/model
 - │── listingmodels.js # Product listing schema
@@ -48,9 +48,11 @@ It provides features for user authentication, product listings, buy requests, an
    ```bash
    git clone https://github.com/your-username/HarvestHub.git
    cd HarvestHub
-Install dependencies
+   
+2. **Install dependencies**
+    npm install
 
-npm install
+
 
 
 Set up environment variables
