@@ -28,17 +28,17 @@ It provides features for user authentication, product listings, buy requests, an
 ---
 
 ## 📂 Project Structure
-HarvestHub/
-│── index.js # Main server file
-│── models.js # User schema/model
-│── listingmodels.js # Product listing schema
-│── contactmodel.js # Contact form schema
-│── buymodel.js # Buy request schema
-│── routes/ # Express routes
-│── views/ # EJS frontend templates
-│── public/ # Static files (CSS, JS, Images)
-│── .env # Environment variables
-│── package.json # Dependencies and scripts
+- HarvestHub/
+- │── index.js # Main server file
+- │── models.js # User schema/model
+- │── listingmodels.js # Product listing schema
+- │── contactmodel.js # Contact form schema
+- │── buymodel.js # Buy request schema
+- │── routes/ # Express routes
+- │── views/ # EJS frontend templates
+- │── public/ # Static files (CSS, JS, Images)
+- │── .env # Environment variables
+- │── package.json # Dependencies and scripts
 
 
 ---
