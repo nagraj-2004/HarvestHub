@@ -28,17 +28,16 @@ It provides features for user authentication, product listings, buy requests, an
 ---
 
 ## 📂 Project Structure
-HarvestHub/
-│── index.js              # Main server file (Express backend)
-│── models.js             # User schema/model
-│── listingmodels.js      # Product listing schema
-│── contactmodel.js       # Contact form schema
-│── buymodel.js           # Buy request schema
-│── routes/               # Express routes
-│── views/                # EJS frontend templates
-│── public/               # Static files (CSS, JS, Images)
-│── .env                  # Environment variables
-│── package.json          # Dependencies and scripts
+- **HarvestHub**             # Main server file (Express backend)
+- │── models.js             # User schema/model
+- │── listingmodels.js      # Product listing schema
+- │── contactmodel.js       # Contact form schema
+- │── buymodel.js           # Buy request schema
+- │── routes/               # Express routes
+- │── views/                # EJS frontend templates
+- │── public/               # Static files (CSS, JS, Images)
+- │── .env                  # Environment variables
+- │── package.json          # Dependencies and scripts
 
 
 
@@ -65,11 +64,11 @@ HarvestHub/
    ```bash
    npm start
 
-5 **Visit the app**
+5. **Visit the app**
   ```bash
   http://localhost:3000
 
-6.**🌐 Deployment**
+## 🌐 Deployment
   HarvestHub is hosted on https://harvesthub-zl8k.onrender.com
 
   
