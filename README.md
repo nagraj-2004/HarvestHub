@@ -42,7 +42,10 @@ It provides features for user authentication, product listings, buy requests, an
 
 
 ---
- 
+
+ ## 🌐 Deployment
+> 🚀 Live Demo: [HarvestHub on Render](https://harvesthub-zl8k.onrender.com)
+
 ## ⚙️ Installation & Setup 
 
 1. **Clone the repo**
@@ -69,8 +72,8 @@ It provides features for user authentication, product listings, buy requests, an
   http://localhost:3000
 ---
 
- ## 🌐 Deployment
-  HarvestHub is hosted on https://harvesthub-zl8k.onrender.com
+
+
   
 
 
