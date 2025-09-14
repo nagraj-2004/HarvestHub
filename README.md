@@ -52,6 +52,14 @@ It provides features for user authentication, product listings, buy requests, an
 2. **Install dependencies**
     ```bash
     npm install
+3. **Set up environment variables**
+   **Create a .env file in the root directory:**
+   ```bash
+   MONGO_URI=your_mongodb_connection_string
+   PORT=3000
+   SECRET_KEY=super12378
+   
+
 
 
 
