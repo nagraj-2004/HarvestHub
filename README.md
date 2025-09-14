@@ -58,24 +58,10 @@ It provides features for user authentication, product listings, buy requests, an
    MONGO_URI=your_mongodb_connection_string
    PORT=3000
    SECRET_KEY=super12378
-   
 
-
-
-
-
-
-Set up environment variables
-Create a .env file in the root directory:
-
-MONGO_URI=your_mongodb_connection_string
-PORT=3000
-SECRET_KEY=superSecret123456
-
-
-Run locally
-
-npm start
+4. **Run locally**
+   ```bash
+   npm start
 
 
 Visit 👉 http://localhost:3000
