@@ -53,7 +53,7 @@ It provides features for user authentication, product listings, buy requests, an
     ```bash
     npm install
 3. **Set up environment variables**
-   **Create a .env file in the root directory:**
+   -Create a .env file in the root directory:
    ```bash
    MONGO_URI=your_mongodb_connection_string
    PORT=3000
