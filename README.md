@@ -44,7 +44,7 @@ It provides features for user authentication, product listings, buy requests, an
 ---
 
  ## 🌐 Deployment
-> 🚀 Live Demo: [HarvestHub on Render](https://harvesthub-zl8k.onrender.com)
+> 🚀 Live Demo:(https://harvesthub-zl8k.onrender.com)
 
 ## ⚙️ Installation & Setup 
 
